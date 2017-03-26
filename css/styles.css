@@ -1,4 +1,4 @@
-    
+        
     h1{
 
     font-family: 'Source Serif Pro', serif;
@@ -18,6 +18,39 @@ form-group{
 
     background-color:lightgreen;
 }
+
+.col-xs-12 {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.col-sm-12{
+
+    margin-top:10px;
+    margin-bottom:10px;
+
+}
+
+.form-description{
+
+    margin-left:15px;
+    margin-right:15px;
+    padding-right:50px;
+}
+
+#outputIncome{
+    color:red;
+}
+
+.nyc {
+  background-color:lightblue;
+}
+
+.blue {
+  background: blue;
+  color: pink;
+}
+
 
 /*FOR REFERENCE:*/
 

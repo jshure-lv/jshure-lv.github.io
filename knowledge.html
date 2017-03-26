@@ -12,11 +12,14 @@
         <!-- Core Bootstrap CSS -->
         <link href="css/bootstrap.css" rel="stylesheet">
        
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,700i|Sintony:400,700|Source+Serif+Pro:400,600" rel="stylesheet">
+
+
         <!-- Custom styles for this template -->
         <link href="css/styles.css" rel="stylesheet">
        
-        <!-- Google Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,700i|Sintony:400,700|Source+Serif+Pro:400,600" rel="stylesheet">
+
 
     </head>
 
@@ -99,77 +102,187 @@
         <div class="panel panel-success">
             
             <div class="panel-heading">
+
                 <h3 class="panel-title">Income Projector Thing</h3>
            
             </div>
 
-             <div class="panel-body">
+                
+                <div class="col-xs-12 col-sm-12 form-description">
+                
+                    <tr>Tell us about your life and where you'd like to live. We'll give you a sense of how much you'd need to earn.</tr>
+                
+                </div>
+
+                <div class="panel-body">
 
                  <form>
                         
-                    <div class="form-group">
-                        
-                        <label for="exampleInputEmail1">Email address</label>
-                        
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                <!-- CITY DROPDOWN -->
+
+           <!--      <div class="dropdown">
+                
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> City You'll Live In <span class="caret"></span> </button>
+                                 
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu3"> 
                     
-                    </div>
-  
-                    <div class="form-group">
-                    
-                        <label for="exampleInputPassword1">Password</label>
-                        
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                        
-                    </div>
-                    
-                    <div class="form-group">
-                    
-                        <label for="exampleInputFile">File input</label>
-                        
-                        <input type="file" id="exampleInputFile">
-                        
-                        <p class="help-block">Example block-level help text here.</p>
-                    
-                    </div>
-                    
-                    <div class="checkbox">
+                        <li class="dropdown-header">Dropdown header</li> 
+                        <li><a href="#">Action</a></li> 
+                        <li><a href="#">Another action</a></li> 
+                        <li><a href="#">Something else here</a></li> 
+                        <li class="dropdown-header">Dropdown header</li> <li><a href="#">Separated link</a></li> 
+
+                    </ul>
+
+                </div> -->
+
+                <!-- CITY RADIO BUTTONS -->
+
+                <div class="form-group questionOne">
+
+                <div class="panel-body">
+                         
+                    <label for="exampleInputEmail1">In what city will you live?</label>
+
+                    <div class="radio"> <!-- NYC -->
                     
                         <label>
-                        
-                        <input type="checkbox"> Check me out
-                        
+                    
+                            <input type="radio" name="cityRadio" id="nyc" value="nyc"> <!-- checked -->
+                
+                                New York City
+                    
                         </label>
                     
                     </div>
                     
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <div class="radio"> <!-- CHICAGO -->
+                    
+                    <label>
+                    
+                    <input type="radio" name="cityRadio" id="chicago" value="chi">
+                    
+                            Chicago
 
-                    <!-- MONEY INPUT -->
-
-<!--                     <div class="form-group">
- 
-                       <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
-                        
-                        <div class="input-group"></div>
-                        
-                        <div class="input-group-addon">$</div>
-                        
-                        <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
-                        
-                        <div class="input-group-addon">.00</div>
-                        
-                    </div>
+                    </label>
                     
                     </div>
                     
-                    <button type="submit" class="btn btn-primary">Transfer cash</button>
- -->                
-                </form>
+                    <div class="radio"> <!-- SAN FRANCISCO -->
+
+                    <label>
+                    <input type="radio" name="cityRadio" id="sanFrancisco" value="sf"> <!-- disabled -->
+
+                            San Francisco
+                    
+                    </label>
+                    </div>
+
+                    <div class="radio"> <!-- OTHER -->
+
+                    <label>
+                    <input type="radio" name="cityRadio" id="otherCity" value="other-city"> <!-- disabled -->
+
+                            Other
+                    
+                    </label>
+                    </div>
+                    </div>
+
+
+                    <!-- LOAN PAYMENT INPUT -->
+
+                    <div class="form-group form-description questionTwo">
+
+                    <label for="exampleInputEmail1">How much do you pay toward loans each month?</label>                  
+                   
+                    <label class="sr-only" for="loanInputAmount">Amount (in dollars)</label>
+                    
+                    <div class="input-group">
+                    
+                    <div class="input-group-addon">$</div>
+                    
+                    <input type="text" class="form-control" id="loanInputAmount" placeholder="Monthly Amount">
+                    
+                    <!-- <div class="input-group-addon">.00</div> -->
+                    
+                    </div>
+                    
+                    </div>
+                    
+                    <!-- <button type="submit" class="btn btn-primary">Transfer cash</button> -->
+
+
+                    
+                    <!-- CHILDCARE RADIO BUTTONS -->
+
+                    <div class="form-group questionThree">
+
+                    <div class="panel-body">
+                    
+                    <label for="exampleInputEmail1">Will you pay for childcare?</label>
+
+                    <div class="radio"> <!-- YES -->
+                    
+                        <label>
+                    
+                            <input type="radio" name="childcareRadio" id="optionsRadios1" value="yes"> <!-- checked -->
+                
+                                Yes
+                    
+                        </label>
+                    
+                    </div>
+                    
+                    <div class="radio"> <!-- NO -->
+                    
+                    <label>
+                    
+                    <input type="radio" name="childcareRadio" id="optionsRadios2" value="no">
+                    
+                            No
+
+                    </label>
+                    
+                    </div>
+                    
+                    <div class="radio"> <!-- IDK -->
+
+                    <label>
+                    <input type="radio" name="childcareRadio" id="optionsRadios3" value="unsure"> <!-- disabled -->
+
+                            I'm not sure
+                    
+                    </label>
+                    </div>
+
+                <!-- SUBMIT BUTTON -->
+
+                                    
+                    <button type="button" class="btn btn-default" id="submitButton">Submit</button>
+
+                    <!-- Note: Change 'button type' to 'submit' to do the thing where it sends you to the top of the page. -->
+
+                         
+                </div>
+
+                </div>
+
+             <!-- YOU WILL NEED TO EARN... -->
+
+                    <label> You probably need to earn about...$<span id="targetIncome"></span></span></label>
+                    
+
+                    
 
              </div>
+             </div>
+             </form>
+
+
+
         
-        <div class="panel-footer">Yeah!</div>
+        <div class="panel-footer">Something to give this footer some height</div>
         
         </div>
 
@@ -192,8 +305,16 @@
 
 
 
+        <!-- <script src="js/npm.js"></script> -->
+        <script src="js/jquery-2.1.4.js"></script>
+      
+<!--         <script src="js/bootstrap.js"></script>
+        <script src="js/bootstrap.min.js"></script> -->
+        
 
-
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+        <script src="js/index.js"></script>
+        
 </body>
 </html>
 
