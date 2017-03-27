@@ -70,12 +70,15 @@ $(function() {
 
  function calculateTargetIncome(){
 
-
-    
- } 
+    } 
+ 
  function displayTargetIncome(){
         $("#targetIncome").html(targetIncome);
     }
+
+    $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+    })
  
 
 });
