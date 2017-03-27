@@ -50,14 +50,25 @@ $(function() {
     // targetIncome = afterTax + cityRate;
 
     targetIncome = cityRate + ((ccRate + (loanAmount * 12))/(.75));
+    // targetIncome = cityRate + (loanAmount * 12)/(.75);
 
-
-    console.log(targetIncome);
-    console.log("Target Income" + targetIncome);
+    targetIncomeNoCC  =  cityRate + (loanAmount * 12)/(.75); 
+    console.log("Target Income: " + targetIncome);
+    console.log("Target Income No CC: " + targetIncomeNoCC);
 
     // PLACE TARGET INCOME IN INTERACE
-    $("#targetIncome").html('<h1>$'+ targetIncome.toFixed(0) +'</h1>');
-    
+    if (childCareChoice === "yes"){
+      $("#targetIncome").html('<h1>$'+ targetIncome.toFixed(0) +'</h1>');
+    }
+
+    if (childCareChoice === "no"){
+      $("#targetIncome").html('<h1>$'+ targetIncomeNoCC.toFixed(0) +'</h1>');
+    }
+
+    if (childCareChoice === "unsure"){
+      $("#targetIncome").html('<h1>$'+ targetIncomeNoCC.toFixed(0) +'</h1>');
+    }
+
 
    
     }
@@ -68,22 +79,14 @@ $(function() {
       alert("Hey there! We can handle only the three cities above. Please choose one of them or check back later.");
     }
 
- function calculateTargetIncome(){
+    function calculateTargetIncome(){
 
-    } 
- 
+
+    
+ } 
  function displayTargetIncome(){
         $("#targetIncome").html(targetIncome);
     }
-
-    $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-    })
  
 
 });
-  
-
-
-
-
